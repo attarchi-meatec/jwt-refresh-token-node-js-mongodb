@@ -1,5 +1,5 @@
 module.exports = {
-  HOST: "localhost",
-  PORT: 27017,
-  DB: "bezkoder_db"
+  HOST: process.env.DB_HOST || "localhost",
+  PORT: process.env.DB_PORT || 27017,
+  DB: process.env.DB_NAME || "bezkoder_db"
 };
